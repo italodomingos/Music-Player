@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div>
+        <h4>Player de musica</h4>
+        <img id="cover" src="" alt="Disc Cover" />
+        <audio id="audio" src=""></audio>
+        <div id="music-info">
+            <div id="music-title">
+                <div id="music-name">
+                    Nome da musica
+                </div>
+                <div id="music-band" class="light-color">
+                    Nome da banda
+                </div>
+            </div>
+            <button id="like-button">
+                <i class="bi bi-heart"></i>
+            </button>
+        </div>
+        <div id="progress-container">
+            <div id="progress-bar">
+                <div id="current-progress">
+                </div>
+            </div>
+            <div id="time-box">
+                <div id="current-time">
+                    00:00
+                </div>
+                <div id="total-time">
+                    00:00
+                </div>
+            </div>
+        </div>
+        
+        <div id="buttons-container">
+            <button id="shuffle-button" class="highlight-button">
+                <i class="bi bi-shuffle"></i>
+            </button>
+            <button id="back-button" class="direction-button">
+                <i class="bi bi-arrow-left-circle-fill"></i>
+            </button>
+            <button id="play-button">
+                <i class="bi bi-play-circle-fill"></i>
+            </button>
+            <button id="foward-button" class="direction-button">
+                <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+            <button id="repeat-button">
+                <i class="bi bi-arrow-repeat"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

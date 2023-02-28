@@ -1,0 +1,106 @@
+body {
+    background-image: linear-gradient(rgb(59, 88, 93), rgb(29, 40, 42));
+    height: 100vh;
+    color: white;
+    font-family: sans-serif;
+    /*atributos para deixar o site mais responsivo*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+}
+
+#music-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 0 0 0;
+}
+
+#buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+#cover {
+    width: 450px;
+    height: 450px;
+}
+
+h4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+#music-name {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.light-color{
+    color: gray;
+}
+
+#progress-bar{
+    background-color: gray;
+    height: 3px;
+    border-radius: 15px;
+
+}
+#progress-container{
+    padding-top: 1em;
+    cursor: pointer;
+}
+#current-progress{
+    --progress: 0%;
+    height: inherit;
+    background-color: white;
+    border-radius: inherit;
+    width: var(--progress);
+}
+
+#play-button{
+    font-size: 3em;
+    
+}
+button:active{
+    color:gray;
+}
+button{
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.highlight-button:target{
+    color: green
+}
+
+.direction-button{
+    font-size: 2em;
+}
+
+#like-button{
+    font-size: 1.5em;
+}
+
+#time-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.5em;
+    font-size: small;
+}
+
+.active-button{
+    color : rgb(0,183,107)
+}
